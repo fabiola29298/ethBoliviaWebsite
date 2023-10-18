@@ -156,6 +156,14 @@ export interface Testimonial {
   image?: string | unknown;
 }
 
+export interface Speakers {
+  title?: string;
+  speaker?: string;
+  name?: string;
+  job?: string;
+  image?: string | unknown;
+}
+
 export interface Input {
   type: HTMLInputTypeAttribute;
   name: string;
@@ -226,6 +234,10 @@ export interface Pricing extends Headline, Widget {
   prices?: Array<Price>;
 }
 
+export interface Speakers extends Headline, Widget {
+  speakers?: Array<Speakers>;
+  callToAction?: CallToAction;
+}
 export interface Testimonials extends Headline, Widget {
   testimonials?: Array<Testimonial>;
   callToAction?: CallToAction;

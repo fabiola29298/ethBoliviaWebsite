@@ -2,6 +2,27 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
+     {
+      text: 'Fabi',
+      links: [
+        {
+          text: '2023',
+          href: getPermalink('/fabi/hackathon-2023'),
+        },
+        {
+          text: '2024',
+          href: getPermalink('/fabi/hackathon-2024'),
+        },
+        {
+          text: 'main App',
+          href: getPermalink('/fabi/main'),
+        },
+        {
+          text: 'we',
+          href: getPermalink('/fabi/nosotros'),
+        },
+      ],
+    },
     {
       text: 'Homes',
       links: [

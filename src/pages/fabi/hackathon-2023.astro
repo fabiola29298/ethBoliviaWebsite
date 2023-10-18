@@ -1,0 +1,329 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Agenda from '~/components/widgets/Agenda.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+import Speakers from '~/components/widgets/Speakers.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+const metadata = {
+  title: 'ETH Bolivia 2023',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
+      { text: 'Learn more', href: '#features' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AstroWind Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      Ethereum Bolivia 2023<br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+    Primera Hackathon de Blockchain en La Paz, Bolivia.
+
+    </Fragment>
+  </Hero2>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="¿Qué es Ethereum Bolivia 2023?"
+    subtitle="Es un evento que reúne a expertos en el ecosistema Ethereum, programadores y entusiastas en La Paz. Un espacio para fomentar la educación, la colaboración, el intercambio de conocimiento y el desarrollo, si estás en tus primeros pasos en el mundo de Blockchain o que seas un experimentado entusiasta, aquí encontrarás un lugar para compartir tus ideas. "
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Impacto del evento"
+    subtitle="Los siguientes indicadores reflejan los resultados de eventos organizados en universidades de La Paz en Septiembre de 2023."
+    stats={[
+      { title: 'Asistentes', amount: '200' },
+      { title: 'Expertos', amount: '16' },
+      { title: 'Comunidades aliadas & patrocinadores', amount: '10' },
+      { title: 'Horas de charlas técnicas y no técnicas', amount: '30' },
+      { title: 'Hackers', amount: '85' },
+      { title: 'Proyectos', amount: '13' },
+      { title: 'Premios', amount: '+1000$' },
+    ]}
+  />
+
+
+  <!-- Brands Widget ****************** -->
+
+  <Brands
+    title="Patrocinadores"
+    subtitle=""
+    icons={[]}
+    images={[
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
+        alt: 'Ecosystem Support Program',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png',
+        alt: '1inch Network',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
+        alt: 'MC4',
+      },
+
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
+        alt: 'Youtube',
+      },
+    ]}
+  />
+  <Brands
+    title="Comunidades aliadas y colaboradores "
+    subtitle=""
+    icons={[]}
+    images={[
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_1280.png',
+        alt: 'Universidad Catolica Boliviana (UCB)',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2021/12/06/13/48/visa-6850402_1280.png',
+        alt: 'IEEE en UCB',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
+        alt: 'Mujeres Tics',
+      },
+
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
+        alt: 'esLibertad Bolivia',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
+        alt: 'Taikai',
+      },
+      {
+        src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
+        alt: 'Talent Protocol',
+      },
+    ]}
+  />
+
+  <!-- Testimonials Widget *********** -->
+
+  <Speakers
+    title="Speakers"
+    speakers={[
+      {
+        speaker: `It's made exploring and downloading website templates a breeze. The interface is intuitive, and I had no trouble finding the perfect template for my project. It's an app that truly empowers users.`,
+        name: 'Cary Kennedy',
+        job: 'Film director',
+        image: {
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Cary Kennedy Image',
+        },
+      },
+      {
+        speaker: `The app's seamless download process and intuitive layout have made selecting templates an enjoyable experience. Being able to preview and experiment with different designs before committing has saved me time and ensured I get the perfect look for my website.`,
+        name: 'Josh Wilkinson',
+        job: 'Product Manager',
+        image: {
+          src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Josh Wilkinson Image',
+        },
+      },
+      {
+        speaker:
+          'I was able to download and use a professional website template within minutes. The step-by-step process and user-friendly interface made it easy for me to create a website that looks as if it was designed by a pro.',
+        name: 'Sidney Hansen',
+        job: 'Decorator',
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+      {
+        speaker:
+          'I was able to download and use a professional website template within minutes. The step-by-step process and user-friendly interface made it easy for me to create a website that looks as if it was designed by a pro.',
+        name: 'Sidney Hansen',
+        job: 'Decorator',
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '_blank',
+      text: 'Ver todos los speakers',
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:chevron-right',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Agenda
+    title="Agenda & Speakers"
+    subtitle=""
+    tagline=" "
+    items={[
+      {
+        title: 'Picture a superhero landing – epic, right? Thats the job of',
+        description: "Ana Belen <br> CTO de HER dao   ",
+        icon: ' 24 de Septiembre',
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+      {
+        title: 'Heros',
+        description:
+          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'Features',
+        description:
+          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Content',
+        description:
+          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+        icon: 'flat-color-icons:document',
+      },
+      {
+        title: 'Call-to-Action',
+        description:
+          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+        icon: 'flat-color-icons:advertising',
+      },
+      {
+        title: 'Pricing',
+        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        icon: 'flat-color-icons:currency-exchange',
+      },
+      {
+        title: 'Testimonial',
+        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        icon: 'flat-color-icons:voice-presentation',
+      },
+      {
+        title: 'Contact',
+        description:
+          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        icon: 'flat-color-icons:business-contact',
+      },
+      {
+        title: 'Footers',
+        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        icon: 'flat-color-icons:database',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Agenda>
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Preguntas Frecuentes"
+    items={[
+      {
+        title: '¿Qué modalidad tiene la Hackathon?',
+        description:
+          'Tiene dos modalidades. La Hackathon comenzará en modalidad virtual por 8 días y después será modalidad presencial en la Universidad Católica Boliviana.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: '¿Quién puede asistir a este evento?',
+        description: `Los eventos de Ethereum y web3 se centran en invitar a constructores (desarrolladores, diseñadores, artistas) que quieran crear o contribuir a proyectos durante la Hackathon.`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Soy nuevo en Ethereum. ¿Aún puedo participar?',
+        description:
+          '¡Absolutamente! Nuestros eventos están abiertos tanto a principiantes como a veteranos del mundo web3. Este evento en particular se adaptará a los asistentes que tienen experiencia con las tecnologías Web2 y están interesados ​​en construir en web3 por primera vez.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: '¿Qué puedo construir durante el evento?',
+        description: `Se le permite trabajar en cualquier idea que le entusiasme, siempre que se desarrolle sobre Ethereum. Esto significa que el evento tiene un final abierto y no es necesario que usted resuelva ningún problema en particular.`,
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Contáctanos"
+    subtitle="¿Tienes alguna duda?, Estamos acá para ayudarte."
+
+    items={[
+      {
+        title: 'Correo electrónico',
+        description: 'ethbolivia@gmail.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Suígenos',
+        description: '@EthereumBo',
+        icon: 'tabler:brand-x',
+      },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Novedades"
+    information={`Explora en nuestra colección de artículos, guías y eventos que realizaremos en diferentes ciudades en Bolivia.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>
