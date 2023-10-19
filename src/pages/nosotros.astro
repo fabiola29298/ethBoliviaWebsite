@@ -1,0 +1,216 @@
+---
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import Agenda from '~/components/widgets/Agenda.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Quienes Somos',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Quienes Somos"
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Caos Image',
+    }}
+  >
+    <Fragment slot="title">
+      ¡Bienvenidos/as a Ethereum Bolivia!
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Somos una vibrante comunidad de apasionadas y curiosas mentes, entusiastas del ecosistema blockchain en Bolivia y toda Latinoamérica.
+    </Fragment>
+  </Hero>
+
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Sedes"
+    subtitle=" "
+    columns={2}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'La Paz',
+        description:
+          'Comenzamos la comunidad en La Paz en 2021, organizamos eventos mensuales.',
+        icon: 'tabler:gps',
+      },
+      {
+        title: 'Santa Cruz',
+        description:
+          'Nuestro primer evento en Santa Cruz fue en 2022 y ahora estamos preparando la Hackathon para 2024.',
+        icon: 'tabler:gps',
+      },
+    ]}
+  />
+
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="¿Quienes Somos?"
+    subtitle=" "
+    items={[
+      {
+        title: 'Misión',
+        description:
+          'Inspirar y convocar a todos los bolivianos, bolivianas y latinoamericanos a sumarse al movimiento web3 y construir un mejor futuro de la mano de Ethereum.',
+      },
+      {
+        title: 'Nuestro Espacio',
+        description:
+          'Queremos que nuestro espacio sea un punto de encuentro donde se comparten ideas, se fomenta el aprendizaje continuo y se creen relaciones fructíferas y duraderas.',
+      },
+      {
+        title: 'Quienes somos',
+        description:
+          'Ethereum Bolivia es un grupo de jóvenes entusiastas de la Web3 y de la tecnología Blockchain. Buscamos fomentar la investigación e innovación mediante diversas actividades para la comunidad.',
+      },
+    ]}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Nuestro Impacto"
+    subtitle="Además revisa los logros de la primera Hackathon Web3 en el país. "
+    isReversed={true}
+    callToAction={{
+      text: 'Ethereum Bolivia 2023',
+      href: '/2023',
+    }}
+    items={[
+      {
+        title: 'Miembros de ETH Kipu - ETH Latam',
+        description: 'Somos parte de la red de comunidades latinas de Ethereum.',
+        icon: 'tabler:globe',
+      },
+      {
+        title: 'Generación de Comunidad',
+        description:
+          'Nos esforzamos por ser una comunidad orientada en crear la próxima generación.',
+        icon: 'tabler:message-star',
+      },
+      {
+        title: 'Educación sobre Web3 y Blockchain',
+        description:
+          'buscamos fomentar la educación, la colaboración, el intercambio de conocimiento y el desarrollo, ya sea que estés dando tus primeros pasos.',
+        icon: 'tabler:award',
+      },
+    ]}
+  />
+
+
+  <!-- Agenda Widget ************** -->
+
+  <Agenda
+    title="Equipo"
+    subtitle=""
+    tagline=" "
+    items={[
+      {
+        title: 'Nico nico',
+        description: `CTO de A <br>
+        <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
+        >Follow me! »</a>
+        `,
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+      {
+        title: 'Nico nico',
+        description: `CTO de A <br>
+        <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
+        >Follow me! »</a>
+        `,
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+      {
+        title: 'Nico nico',
+        description: `CTO de A <br>
+        <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
+        >Follow me! »</a>
+        `,
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+      {
+        title: 'Nico nico',
+        description: `CTO de A <br>
+        <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
+        >Follow me! »</a>
+        `,
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+      {
+        title: 'Nico nico',
+        description: `CTO de A <br>
+        <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
+        >Follow me! »</a>
+        `,
+        image: {
+          src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+          alt: 'Sidney Hansen Image',
+        },
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Agenda>
+
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Contáctanos"
+    subtitle="¿Tienes alguna duda?, Estamos acá para ayudarte."
+
+    items={[
+      {
+        title: 'Correo electrónico',
+        description: 'ethbolivia@gmail.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Suígenos',
+        description: '@EthereumBo',
+        icon: 'tabler:brand-x',
+      },
+    ]}
+  />
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Novedades"
+    information={`Explora en nuestra colección de artículos, guías y eventos que realizaremos en diferentes ciudades en Bolivia.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+
+</Layout>

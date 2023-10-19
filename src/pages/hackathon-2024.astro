@@ -1,0 +1,52 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+
+const metadata = {
+  title: 'ETH Bolivia 2024',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Segunda versión"
+    title="Ethereum Bolivia 2024"
+    subtitle="Santa Cruz será sede en Agosto de 2024."
+    actions={[
+           { variant: 'secondary', text: 'versión 2023', href: '2023#' },
+
+        ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Click-through Landing Page Hero Image',
+    }}
+  />
+
+  <CallToAction
+    title="Muy pronto"
+    subtitle="Estamos trabajando y pronto tendremos novedades. Lo anunciaremos en nuestras redes sociales."
+
+  />
+
+   <Steps2
+    title="¿Quieres ser patrocinador?"
+    subtitle="Contáctate a ethbolivia@gmail.com "
+
+    items={[
+      {
+        title: 'Correo electrónico',
+        description: 'ethbolivia@gmail.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Suígenos',
+        description: '@EthereumBo',
+        icon: 'tabler:brand-x',
+      },
+    ]}
+  />
+</Layout>

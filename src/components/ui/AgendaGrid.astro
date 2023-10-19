@@ -94,6 +94,8 @@ const {
                 )}
                 set:html={description}
               />
+            )}
+              {icon && (
               <p
                 class={twMerge(
                   "text-muted  mt-2",
@@ -103,11 +105,9 @@ const {
                 set:html={icon}
               />
             )}
-            {callToAction && (
-              <div class="mt-2">
-                <Button {...callToAction} />
-              </div>
-            )}
+
+
+
           </div>
           </div>
         )
