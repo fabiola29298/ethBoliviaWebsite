@@ -23,10 +23,6 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    actions={[
-      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
-      { text: 'Learn more', href: '#features' },
-    ]}
     image={{
       src: '~/assets/images/photo4eth2023.jpg',
       alt: 'AstroWind Hero Image',
@@ -61,9 +57,9 @@ const metadata = {
     subtitle="Los siguientes indicadores reflejan los resultados de eventos organizados en universidades de La Paz en Septiembre de 2023."
     stats={[
       { title: 'Asistentes', amount: ' +200' },
-      { title: 'Expertos', amount: '16' },
+      { title: 'Expertos', amount: '25' },
       { title: 'Comunidades aliadas & patrocinadores', amount: '10' },
-      { title: 'Horas de charlas técnicas y no técnicas', amount: '+30' },
+      { title: 'Horas de charlas técnicas y no técnicas', amount: '+45' },
       { title: 'Hackers', amount: '85' },
       { title: 'Proyectos', amount: '10' },
       { title: 'Premios', amount: '+1000$' },
@@ -198,15 +194,15 @@ const metadata = {
   <!-- Speakers Widget *********** -->
 
   <Speakers
-    title="Speakers Destacados",
-    subtitle="Agradecemos a los speakers y mentores que llegadores de diferentes ciudades y paises para participar.",
+    title="Speakers y mentores destacados",
+    subtitle="Agradecemos a los speakers y mentores que llegaron de diferentes ciudades y paises para participar.",
     speakers={[
       {
         speaker: ``,
         name: 'Nico Gallardo',
         job: 'Co-fundador Troops y el videojuego Wild Friends',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers12.png',
           alt: 'Nico Gallardo Image',
         },
       },
@@ -215,7 +211,7 @@ const metadata = {
         name: 'Juan David Reyes',
         job: 'Co-fundador de ETH Colombia',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers18.png',
          alt: 'Juan David Reyes Image',
         },
       },
@@ -223,7 +219,7 @@ const metadata = {
         speaker: ``,name: 'Alexia Celeste',
         job: 'Co-fundador de Cripto Curiosas',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers9.png',
          alt: 'Alexia Celeste Image',
         },
       },
@@ -233,7 +229,7 @@ const metadata = {
         name: 'Remberto Gonzales',
         job: 'Blockchain Developer y Docente en USFX Chuquisaca',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers26.png',
          alt: ' Image',
         },
       },
@@ -243,7 +239,17 @@ const metadata = {
         name: 'Ana Belén',
         job: 'Community Manager de Arbitrum Foundation',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers24.png',
+         alt: ' Image',
+        },
+      },
+      {
+
+        speaker: ``,
+        name: 'Pedro Rey @CriptoPepe',
+        job: 'Marketing Manager en OKX.com. Exbinance. Fundador de Crypto Plata',
+        image: {
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers28.png',
          alt: ' Image',
         },
       },
@@ -253,7 +259,7 @@ const metadata = {
         name: 'Francisco Actis',
         job: 'Contribuidor en 1inch Network',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers25.png',
          alt: ' Image',
         },
       },
@@ -269,7 +275,7 @@ const metadata = {
     items={[
       {
         title: 'Oportunidades laborares en Blockchain',
-        description: "Cecilia Contreras <br> Apicultora y Community Manager de Wild Friends",
+        description: "<b> Cecilia Contreras </b> <br> Apicultora y Community Manager de Wild Friends",
         icon: ' 06 de Septiembre, 2023',
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers1.png',
@@ -278,7 +284,7 @@ const metadata = {
       },
       {
         title: 'Introducción al Blockchain ',
-        description: "Neddy Choque <br> Ingeniero certificado por EC-Council como Ethical Hacker",
+        description: "<b> Neddy Choque </b> <br> Ingeniero certificado por EC-Council como Ethical Hacker",
         icon: ' 06 de Septiembre, 2023',
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers2.png',
@@ -287,217 +293,226 @@ const metadata = {
       },
       {
         title: 'Stablecoins como elementos para contrarrestar la inflación',
-        description: "Mauricio Garita <br> Investigador de la Universidad del Istmo en Guatemala   ",
+        description: "<b> Mauricio Garita </b> <br> Investigador de la Universidad del Istmo en Guatemala   ",
         icon: ' 25 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers3.png',
           alt: 'Image',
         },
       },
       {
         title: 'Régimen jurídico del contrato inteligente',
-        description: "F. Fabian Espinoza <br> Representante regional de políticas públicas en el Regulatory Institute, Bélgica.",
+        description: "<b> F. Fabian Espinoza </b> <br> Representante regional de políticas públicas en el Regulatory Institute, Bélgica.",
         icon: ' 25 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers4.png',
           alt: 'Image',
         },
       },
       {
         title: 'Blockchain y legaltech: El futuro del derecho',
-        description: "Natalia Dalenz<br> Abogada, especialista en derecho de las nuevas tecnologías. ",
+        description: "<b> Natalia Dalenz</b> <br> Abogada, especialista en derecho de las nuevas tecnologías. ",
         icon: ' 25 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers5.png',
           alt: 'Image',
         },
       },
       {
         title: 'DEMO de Finanzas Descentralizadas',
-        description: "Edwin Fernandez<br> Founder de Definomics Lab, Especialista en DeFi  y Embajador de Metapool, Core Team de ETH Lima.",
+        description: "<b> Edwin Fernandez</b> <br> Founder de Definomics Lab, Especialista en DeFi  y Embajador de Metapool, Core Team de ETH Lima.",
         icon: ' 26 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers6.png',
           alt: 'Image',
         },
       },
       {
         title: 'Cómo crear tu comunidad en blockchain, Aprende sobre airdrops y DeFi',
-        description: "Luis Alejandro Tintaya <br> Creador y propietario del canal de YouTube Alex Cripto. ",
+        description: "<b> Luis Alejandro Tintaya </b> <br> Creador y propietario del canal de YouTube Alex Cripto. ",
         icon: ' 26 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers7.png',
           alt: 'Image',
         },
       },
       {
         title: 'NFTs y cómo crear comunidad y transmitir un mensaje internacional ',
-        description: "Sazkiabella<br> Creadora de la popular colección FreakyGirls (NFTs en OpenSea).",
+        description: "<b> Sazkiabella</b> <br> Creadora de la popular colección FreakyGirls (NFTs en OpenSea).",
         icon: ' 26 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers8.png',
           alt: 'Image',
         },
       },
       {
         title: 'Comunidades & Networking',
-        description: "Alexia Celeste<br>Co Founder & Community Builder de Criptocuriosas ",
+        description: "<b> Alexia Celeste</b> <br>Co Founder & Community Builder de Criptocuriosas ",
         icon: ' 27 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers9.png',
           alt: 'Image',
         },
       },
       {
         title: 'Herramientas de gestión para construir una DAO',
-        description: "Briguit Reinaldo<br> Fundadora de Women Biz, la comunidad más grande de mujeres en tecnología web3 del Perú.",
+        description: "<b> Briguit Reinaldo</b> </b> <br> Fundadora de Women Biz, la comunidad más grande de mujeres en tecnología web3 del Perú.",
         icon: ' 27 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers10.png',
           alt: 'Image',
         },
       },
       {
         title: 'Alcanza tus metas con Talent Protocol.',
-        description: "Juan Pablo Hernandez <br> System engenieer & Web3 Degen. Growth at Talent Protocol.",
+        description: "<b> Juan Pablo Hernandez  </b> <br> System engenieer & Web3 Degen. Growth at Talent Protocol.",
         icon: ' 27 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers11.png',
           alt: 'Image',
         },
       },
       {
         title: 'Cómo pitchear tu proyecto - charla especializadas',
-        description: "Nico Gallardo <br> Co-fundador de  Troops y el videojuego Wild Friends, W3b Lab, Ethereum Bolivia. ",
+        description: "<b> Nico Gallardo  </b> <br> Co-fundador de  Troops y el videojuego Wild Friends, W3b Lab, Ethereum Bolivia. ",
         icon: ' 28 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers12.png',
           alt: 'Image',
         },
       },
       {
-        title: 'El Proceso de Auditoría para Startup',
-        description: "Gabriel Alpiry Hurtado <br> Auditor Financiero, especialista en Finanzas ",
+        title: 'Trazabilidad en la Producción',
+        description: "<b> Remberto Gonzales   </b> <br> Blockchain developer y Docente en USFX Chuquisaca ",
         icon: ' 28 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers26.png',
           alt: 'Image',
         },
       },
       {
         title: 'Pagos internacionales y tokenizacion de bienes inmuebles con Blockchain en Bolivia',
-        description: "Gabriel Alpiry Hurtado <br> Gerente empresa Blockchain Consultora.",
+        description: "<b> Huascar Miranda </b> <br> Gerente empresa Blockchain Consultora.",
         icon: ' 28 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers14.png',
+          alt: 'Image',
+        },
+      },
+      {
+        title: 'Tokenización de activos',
+        description: "<b> Jorge Cerda </b> <br> Consultor Asociado Euromonitor International ",
+        icon: ' 28 de Septiembre, 2023',
+        image: {
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers27.png',
           alt: 'Image',
         },
       },
       {
         title: 'Arquitectura de Aplicaciones Descentralizadas en Ethereum',
-        description: "Fabiola Acarapi <br> Co Founder de Ethereum Bolivia ",
+        description: "<b> Fabiola Acarapi </b> <br> Co Founder de Ethereum Bolivia ",
         icon: ' 29 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers15.png',
           alt: 'Image',
         },
       },
       {
         title: 'Construyendo Experiencias de Usuario Confiables: Integrando UX y Desarrollo',
-        description: "Maria Emilia Aguilar  <br>Ingeniera de Sistemas Computaciones ",
+        description: "<b> Maria Emilia Aguilar  </b> <br>Ingeniera de Sistemas Computaciones ",
         icon: ' 29 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers16.png',
           alt: 'Image',
         },
       },
       {
         title: 'Blockchain como Herramienta de Inclusión en Latinoamérica: La Visión de Proof of Integrity',
-        description: "Tom Grau Baena <br>Director Ejecutivo de Proof of Integrity, ",
+        description: "<b> Tom Grau Baena </b> <br>Director Ejecutivo de Proof of Integrity, ",
         icon: ' 29 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers17.png',
           alt: 'Image',
         },
       },
       {
         title: 'Introducción al Desarrollo de dApps con Scaffold-eth 2',
-        description: "Juan David Reyes <br>Co Founder de Ethereum Colombia. Divulgador de Scaffold-ETH2 ",
+        description: "<b> Juan David Reyes </b> <br>Co Founder de Ethereum Colombia. Divulgador de Scaffold-ETH2 ",
         icon: ' 29 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers18.png',
           alt: 'Image',
         },
       },
       {
         title: 'Explorando la Criptografía en Blockchain: Wallets y Seguridad',
-        description: "Ayrton Paredes <br>Frontend Developer en Think and Dev. ",
+        description: "<b> Ayrton Paredes </b> <br>Frontend Developer en Think and Dev. ",
         icon: ' 29 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers19.png',
           alt: 'Image',
         },
       },
       {
         title: 'UX Writing en Web3 ',
-        description: " Josefina Anschütz <br> UX Writer | Mentora UX | Docente UX Writing ",
+        description: "<b>  Josefina Anschütz </b> <br> UX Writer | Mentora UX | Docente UX Writing ",
         icon: ' 29 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers20.png',
           alt: 'Image',
         },
       },
       {
         title: 'Integración de Oráculos en Contratos Inteligentes',
-        description: "Freddy Chambi <br> Web 3 Developer , miembro de Ethereum Bolivia y Eth Kipu . Talent Scholar por parte de Talent Protocol .",
+        description: "<b> Freddy Chambi </b> <br> Web 3 Developer, miembro de Ethereum Bolivia y Eth Kipu",
         icon: ' 30 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers21.png',
           alt: 'Image',
         },
       },
       {
         title: '¿Cómo integrar un contrato inteligente con frontend y no morir en el intento?',
-        description: "Alejandro Soto Diaz <br> Desarrollar de Software ",
+        description: "<b> Alejandro Soto Diaz </b> <br> Desarrollar de Software ",
         icon: ' 30 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers22.png',
           alt: 'Image',
         },
       },
       {
         title: 'Testing con Solidity',
-        description: "Huáscar Miranda Martínez <br>Gerente empresa Blockchain Consultora ",
+        description: "<b> Huáscar Miranda Martínez </b> <br>Gerente empresa Blockchain Consultora ",
         icon: ' 30 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers23.png',
           alt: 'Image',
         },
       },
       {
         title: 'Los caminos en Web3, cómo comenzar ',
-        description: "Ana Belén / AnaTech <br>  Community Manager de Arbitrum Foundation. Co Founder de H.E.R. LATAM",
+        description: "<b> Ana Belén / AnaTech </b> <br>  Community Manager de Arbitrum Foundation. Co Founder de H.E.R. LATAM",
         icon: ' 30 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers24.png',
           alt: 'Image',
         },
       },
       {
         title: 'Introducción a Dev Portal y 1inch APIs',
-        description: "Francisco Actis <br> Contribuidor en 1inch Network",
+        description: "<b> Francisco Actis </b> <br> Contribuidor en 1inch Network",
         icon: ' 30 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers25.png',
           alt: 'Image',
         },
       },
       {
         title: '¿Cómo ser builer en Web3? Revisemos algunos proyectos',
-        description: "Nico Gallardo <br> Co-fundador de  Troops y el videojuego Wild Friends, W3b Lab, Ethereum Bolivia.",
+        description: "<b> Nico Gallardo </b> <br> Co-fundador de  Troops y el videojuego Wild Friends, W3b Lab, Ethereum Bolivia.",
         icon: ' 30 de Septiembre, 2023',
         image: {
-          src: '',
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers12.png',
           alt: 'Image',
         },
       },
