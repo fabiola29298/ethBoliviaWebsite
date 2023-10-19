@@ -25,8 +25,8 @@ const whenExternalScripts = (items = []) =>
     : [];
 
 export default defineConfig({
-  site: SITE.site,
-  base: SITE.base,
+  site: 'https://fabiola29298.github.io/',
+  base: '/ethBoliviaWebsite',
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'static',
