@@ -19,7 +19,7 @@ export default defineConfig({
   site: 'https://fabiola29298.github.io/',
   base: '/ethBoliviaWebsite',
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
-  output: 'static',
+  output: 'server',
   integrations: [tailwind({
     applyBaseStyles: false
   }), sitemap(), mdx(), icon({
@@ -51,5 +51,7 @@ export default defineConfig({
       }
     }
   },
-  adapter: netlify()
+  adapter: netlify({
+    edgeMiddleware: true
+  }),
 });
