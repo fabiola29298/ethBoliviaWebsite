@@ -1,0 +1,37 @@
+---
+publishDate: 2023-08-09T00:00:00Z
+title: VIDEO >> Entrevista del equipo organizador en ETH Argentina
+excerpt:  La primera es la entrevista a Huascar, quien fue profesor de Solidity en la ciudad de La Paz. La segunda entrevista presenta a Freddy y Ayrton, quienes también fueron profesores en Santa Cruz.
+image: https://images.unsplash.com/photo-1497015289639-54688650d173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80
+tags:
+  - front-end
+  - tools
+  - resources
+---
+
+El mundo de Ethereum y la tecnología blockchain están experimentando un crecimiento fenomenal en América Latina. Cada día, más personas se unen a la revolución blockchain, contribuyendo a la expansión de esta tecnología en la región. Y uno de los eventos que ha estado en el epicentro de este movimiento es el evento de Ethereum Argentina.
+
+El evento de Ethereum Argentina es una plataforma donde entusiastas, desarrolladores y profesionales de blockchain se reúnen para discutir, aprender y colaborar en proyectos relacionados con Ethereum. Pero, ¿qué hace que este evento sea aún más especial? Las entrevistas a miembros de comunidades de diferentes países de América Latina realizadas por ETH Kipu.
+
+ETH Kipu es una iniciativa que se ha propuesto compartir historias y experiencias de personas involucradas en el ecosistema de Ethereum y blockchain en América Latina. A través de entrevistas y contenido educativo, ETH Kipu busca dar voz a la comunidad y mostrar cómo la tecnología blockchain está cambiando la vida de las personas en la región.
+
+Dos de estas entrevistas se destacan y merecen una atención especial. La primera es la entrevista a Huascar, quien fue profesor de Solidity en la ciudad de La Paz. La segunda entrevista presenta a Freddy y Ayrton, quienes también fueron profesores de Solidity, pero en la ciudad de Santa Cruz. Estas entrevistas son un testimonio del impacto que Ethereum y la tecnología blockchain están teniendo en la educación y la comunidad de América Latina.
+
+## Entrevista a Huascar: Educando con Solidity en La Paz
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PubF1DNkBiI?si=YmtizJE_0fCR88Rr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Huascar es un apasionado por la tecnología blockchain y Ethereum. Como profesor de Solidity en la ciudad de La Paz, ha desempeñado un papel crucial en la formación de la próxima generación de desarrolladores de blockchain en Bolivia. En su entrevista, compartió su visión y su experiencia sobre cómo la educación en Solidity está impulsando la adopción de Ethereum en su país.
+
+## Entrevista a Freddy y Ayrton: Impartiendo Conocimientos en Solidity en Santa Cruz
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SUbyUCkm-c0?si=Ys9J145xg8MxAtiC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+La segunda entrevista, que presenta a Freddy y Ayrton, arroja luz sobre cómo la educación en Solidity está teniendo un impacto en la ciudad de Santa Cruz. Al igual que Huascar, estos dos apasionados profesores han estado compartiendo su experiencia y conocimientos sobre Solidity con estudiantes locales. La entrevista destaca la importancia de la educación en blockchain como un medio para empoderar a los individuos y promover la adopción de Ethereum en la región.
+
+## La Importancia de la Educación en Blockchain
+
+Estas entrevistas son un recordatorio de la importancia de la educación en blockchain en América Latina. A medida que la tecnología blockchain continúa su expansión en la región, la formación de profesionales y desarrolladores en Solidity y otras habilidades relacionadas con Ethereum se convierte en una prioridad.
+
+Si estás interesado en conocer más sobre las experiencias de Huascar, Freddy y Ayrton, y cómo están educando a la próxima generación de desarrolladores de blockchain en América Latina, te invitamos a ver las entrevistas completas. Estas entrevistas ofrecen una visión más profunda de su trabajo y su visión para el futuro de Ethereum en sus respectivas ciudades.
+
+En resumen, las entrevistas realizadas por ETH Kipu en el evento de Ethereum Argentina resaltan la importancia de la educación en blockchain como motor de la adopción y el crecimiento de Ethereum en América Latina. La educación no solo empodera a individuos, sino que también fortalece las comunidades y sienta las bases para un futuro más descentralizado y equitativo en la región.
+
