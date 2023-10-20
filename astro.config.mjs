@@ -16,8 +16,8 @@ const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://fabiola29298.github.io/',
-  base: '/ethBoliviaWebsite',
+  site: 'https://bespoke-mermaid-9d23fc.netlify.app/',
+  base: '/',
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
   output: 'server',
   integrations: [tailwind({
