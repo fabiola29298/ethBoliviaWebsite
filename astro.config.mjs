@@ -11,12 +11,14 @@ import tasks from './src/utils/tasks';
 import { readingTimeRemarkPlugin } from './src/utils/frontmatter.mjs';
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 import netlify from "@astrojs/netlify/functions";
+import vercel from "@astrojs/vercel/serverless";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown ? Array.isArray(items) ? items.map(item => item()) : [items()] : [];
 
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://bespoke-mermaid-9d23fc.netlify.app/',
+  site: 'https://eth-bolivia-website.vercel.app/',
   base: '/',
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
   output: 'server',
@@ -51,7 +53,5 @@ export default defineConfig({
       }
     }
   },
-  adapter: netlify({
-    edgeMiddleware: true
-  }),
+  adapter: vercel()
 });
