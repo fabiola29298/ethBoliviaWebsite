@@ -1,7 +1,7 @@
 site:
   name: Ethereum Bolivia
-  site: 'https://eth-bolivia-website.vercel.app/'
-  base: '/'
+  site: 'https://fabiola29298.github.io/'
+  base: 'ethBoliviaWebsite/'
   trailingSlash: false
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
