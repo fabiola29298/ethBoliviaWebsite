@@ -5,8 +5,8 @@ excerpt: Informe de métricas revela crecimiento constante en comunidades de Eth
 image: https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
 category: Comunidad
 tags:
-  - astro
-  - tailwind css
+  - ETH Kipu
+  - Metricas
 ---
 
 En el ecosistema de blockchain y las criptomonedas, la comunidad de Ethereum en América Latina (ETH Kipu) está demostrando un crecimiento impresionante. Un claro indicador de este auge es el informe que nos presentan, un breve pero impactante dashboard de métricas que evalúan la evolución de las comunidades de Ethereum en varios países de la región. Estas métricas proporcionan información valiosa sobre la adopción de Ethereum y las actividades en torno a esta plataforma de blockchain.

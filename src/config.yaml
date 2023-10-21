@@ -11,7 +11,7 @@ metadata:
   title:
     default: Ethereum Bolivia
     template: '%s — Ethereum Bolivia'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 Ethereum Bolivia es un grupo de jóvenes entusiastas de la Web3 y de la tecnología Blockchain. Buscamos fomentar la investigación e innovación mediante diversas actividades para la comunidad."
   robots:
     index: true
     follow: true
@@ -23,8 +23,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@fa_async'
+    site: '@ethbolivia'
     cardType: summary_large_image
 
 i18n:

@@ -4,9 +4,8 @@ title: VIDEO >> Entrevista del equipo organizador en ETH Argentina
 excerpt:  La primera es la entrevista a Huascar, quien fue profesor de Solidity en la ciudad de La Paz. La segunda entrevista presenta a Freddy y Ayrton, quienes también fueron profesores en Santa Cruz.
 image: https://images.unsplash.com/photo-1497015289639-54688650d173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80
 tags:
-  - front-end
-  - tools
-  - resources
+  - Video
+  - ETH Argentina
 ---
 
 El mundo de Ethereum y la tecnología blockchain están experimentando un crecimiento fenomenal en América Latina. Cada día, más personas se unen a la revolución blockchain, contribuyendo a la expansión de esta tecnología en la región. Y uno de los eventos que ha estado en el epicentro de este movimiento es el evento de Ethereum Argentina.
