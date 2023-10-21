@@ -3,13 +3,8 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
+import Activities from '~/components/widgets/Activities.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
@@ -54,6 +49,63 @@ const metadata = {
   <!-- Note Widget ******************* -->
 
   <Note />
+
+
+  <!-- Cards Widget ******************* -->
+
+  <Activities
+    title=" "
+    prices={[
+      {
+        title: 'Ethereum Bolivia 2023',
+        subtitle: 'La primera hackathon de Blockchain en el país',
+        price: '0',
+        period: '/ month',
+        callToAction: {
+          target: '_blank',
+          text: 'Ver más',
+          href: '#',
+        },
+        image: {
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/photo4eth2023.jpg',
+          alt: 'Image',
+        },
+      },
+      {
+        title: 'Ethereum Bolivia 2024',
+        subtitle: 'Sede: Santa Cruz',
+        price: 15,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Ver más',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Pronto',
+        image: {
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/heroScz.png',
+          alt: 'Image',
+        },
+      },
+      {
+        title: '¿Quienes somos?',
+        subtitle: 'Conoce al equipo',
+        price: 45,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Ver más',
+          href: '#',
+        },
+        image: {
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/heroNosotros.png',
+          alt: 'Image',
+        },
+      },
+    ]}
+  />
+
 
 
   <!-- CallToAction Widget *********** -->
