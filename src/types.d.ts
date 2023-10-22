@@ -136,7 +136,7 @@ export interface Item {
   image?: Image;
 }
 
-export interface Activity {
+export interface CardActivity {
   title?: string;
   subtitle?: string;
   description?: string;
@@ -229,8 +229,8 @@ export interface Stats extends Headline, Widget {
   stats?: Array<Stat>;
 }
 
-export interface Activities extends Headline, Widget {
-  prices?: Array<Activity>;
+export interface CardActivities extends Headline, Widget {
+  prices?: Array<CardActivity>;
 }
 
 export interface Speakers extends Headline, Widget {
