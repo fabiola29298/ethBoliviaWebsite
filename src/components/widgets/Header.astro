@@ -4,10 +4,13 @@ import Logo from "~/components/Logo.astro";
 import ToggleTheme from "~/components/common/ToggleTheme.astro";
 import ToggleMenu from "~/components/common/ToggleMenu.astro";
 import Button from "~/components/ui/Button.astro"
-
+import i18next  from "i18next";
 import { getHomePermalink } from "~/utils/permalinks";
 import { trimSlash, getAsset } from "~/utils/permalinks";
 import type { CallToAction } from "~/types";
+
+import { handleToggleLanguage } from '~/utils/redirects-utils';
+const pathname = Astro.url.pathname
 
 interface Link {
   text?: string;
@@ -31,6 +34,7 @@ export interface Props {
   isFullWidth?: boolean;
   showToggleTheme?: boolean;
   showRssFeed?: boolean;
+  showLanguage?: boolean;
   position?: string;
 }
 
@@ -43,6 +47,7 @@ const {
   isFullWidth = false,
   showToggleTheme = false,
   showRssFeed = false,
+  showLanguage = false,
   position = "center",
 } = Astro.props;
 
@@ -138,6 +143,15 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
               >
                 <Icon name="tabler:rss" class="w-5 h-5" />
               </a>
+            )
+          }
+          {
+            showLanguage && (
+              <div  class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+              ><a href={handleToggleLanguage({ pathname })}>
+                    <span>{i18next.language.toUpperCase()}</span>
+              </a>
+                </div>
             )
           }
         </div>

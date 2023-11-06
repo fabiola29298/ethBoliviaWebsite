@@ -11,19 +11,21 @@ import Metadata from '~/components/common/Metadata.astro';
 import SiteVerification  from "~/components/common/SiteVerification.astro"
 import Analytics  from "~/components/common/Analytics.astro"
 import BasicScripts from '~/components/common/BasicScripts.astro';
+import i18next from "i18next";
 
 import type { MetaData as MetaDataType } from '~/types';
+import {  HeadHrefLangs } from "astro-i18next/components";
 
 export interface Props {
   metadata?: MetaDataType;
 }
 
 const { metadata = {} } = Astro.props;
-const { language, textDirection } = I18N;
+const {  textDirection } = I18N;
 ---
 
 <!DOCTYPE html>
-<html lang={language} dir={textDirection} class="2xl:text-[20px]">
+<html lang={i18next.language} dir={textDirection} class="2xl:text-[20px]">
 
   <head>
     <GoogleAnalytics/>
@@ -34,6 +36,7 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
+    <HeadHrefLangs />
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">

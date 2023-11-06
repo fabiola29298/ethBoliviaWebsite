@@ -1,0 +1,139 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import Hero from "~/components/widgets/Hero.astro";
+import Note from "~/components/widgets/Note.astro";
+import CardActivities from "~/components/widgets/CardActivities.astro";
+import BlogLatestPosts from "~/components/widgets/BlogLatestPosts.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+import i18next, { t, changeLanguage } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+
+changeLanguage("es");
+
+const metadata = {
+    title: "ETH Bolivia \u2014 Website de la comunidad.",
+    ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Síguenos en',
+        href: 'https://twitter.com/EthereumBo',
+        target: '_blank',
+        icon: 'tabler:brand-x',
+      },
+      { variant: 'secondary',
+        text: 'Comunidad en ',
+        href: 'https://t.me/EthereumBo',
+        target: '_blank',
+        icon: 'tabler:brand-telegram', },
+    ]}
+    image={{ src: '~/assets/images/hero2.png', alt: 'Artist: Patrick Atkins' }}
+  >
+    <Fragment slot="title">
+      Ethereum Bolivia
+    </Fragment>
+
+    <Fragment slot="subtitle"> {t("home.title")}
+      <span class="hidden sm:inline">
+         Comunidad de Ethereum en Bolivia.
+         Aprendamos, difundamos y construyamos!
+      </span>
+
+    </Fragment>
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+
+  <!-- Cards Widget ******************* -->
+
+  <CardActivities
+    title=" "
+    prices={[
+      {
+        title: 'Ethereum Bolivia 2023',
+        subtitle: 'La primera hackathon de Blockchain en el país',
+        callToAction: {
+          text: 'Ver más',
+          href: 'https://fabiola29298.github.io/ethBoliviaWebsite/hackathon-2023',
+        },
+        image: {
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/photo4eth2023.jpg',
+          alt: 'Image',
+        },
+      },
+      {
+        title: 'Ethereum Bolivia 2024',
+        subtitle: 'Sede: Santa Cruz',
+        callToAction: {
+          text: 'Ver más',
+          href: 'https://fabiola29298.github.io/ethBoliviaWebsite/hackathon-2024',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Pronto',
+        image: {
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/heroScz.png',
+          alt: 'Image',
+        },
+      },
+      {
+        title: '¿Quienes somos?',
+        subtitle: 'Conoce al equipo',
+        callToAction: {
+          text: 'Ver más',
+          href: 'https://fabiola29298.github.io/ethBoliviaWebsite/nosotros',
+        },
+        image: {
+          src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/heroNosotros.png',
+          alt: 'Image',
+        },
+      },
+    ]}
+  />
+
+
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Telegram',
+        href: 'https://t.me/EthereumBo',
+        target: '_blank',
+        icon: 'tabler:brand-telegram',
+      },
+
+    ]}
+  >
+    <Fragment slot="title">
+      Participa en nuestra comunidad</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Organizamos eventos cada mes.<br class="hidden md:inline" /> También Twitter Spaces :D
+    </Fragment>
+  </CallToAction>
+
+   <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Novedades"
+    information={`Explora en nuestra colección de artículos, guías y eventos que realizaremos en diferentes ciudades en Bolivia.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>
