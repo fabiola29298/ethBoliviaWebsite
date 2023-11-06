@@ -4,7 +4,7 @@ export const headerData = {
   links: [
 
         {
-          text: 'Inicio',
+          text: 'Home',
           href: getPermalink(),
         },
         {
@@ -16,11 +16,11 @@ export const headerData = {
           href: getPermalink('/hackathon-2024'),
         },
         {
-          text: 'Nosotros',
+          text: 'About us',
           href: getPermalink('/nosotros'),
         },
         {
-          text: 'Novedades',
+          text: 'News',
           href: getBlogPermalink(),
         },
   ],
@@ -35,6 +35,6 @@ export const footerData = {
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://facebook.com/EthereumBo' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },  ],
   footNote: `
-      Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://twitter.com/fa_async"> Fa Async </a> and template by onWidget · All rights reserved.
+      Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://twitter.com/fa_async"> Fa Async </a> and template by onWidget - All rights reserved.
   `,
 };

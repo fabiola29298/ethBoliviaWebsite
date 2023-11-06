@@ -1,7 +1,7 @@
 ---
 publishDate: 2023-09-21T00:00:00Z
-title: Socialización de proyecto de Ley de adopción integral de criptoactivos
-excerpt: evento "Socialización de Proyecto de Ley de adopción integral de Criptoactivos", organizado por la Fundación Friedrich-Ebert
+title: Socializacion de proyecto de Ley de adopción integral de criptoactivos
+excerpt: evento "Socializacion de Proyecto de Ley de adopcion integral de Criptoactivos", organizado por la Fundacion Friedrich-Ebert
 image: https://images.unsplash.com/photo-1520452112805-c6692c840af0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
 category: Comunidad
 tags:

@@ -1,7 +1,7 @@
 ---
 publishDate: 2023-08-12T00:00:00Z
-title: Métricas de Comunidades de Ethereum Latam realizado por ETH Kipu
-excerpt: Informe de métricas revela crecimiento constante en comunidades de Ethereum en América Latina en redes sociales clave.
+title: Metricas de Comunidades de Ethereum Latam realizado por ETH Kipu
+excerpt: Informe de metricas revela crecimiento constante en comunidades de Ethereum en América Latina en redes sociales clave.
 image: https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
 category: Comunidad
 tags:
