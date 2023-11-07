@@ -18,7 +18,7 @@ const currentPage = page.currentPage ?? 1;
 // const allCategories = await findCategories();
 // const allTags = await findTags();
 const metadata = {
-    title: `Novedades ${currentPage > 1 ? ` — Page ${currentPage}` : ""}`,
+    title: `News ${currentPage > 1 ? ` - Page ${currentPage}` : ""}`,
     robots: {
         index: blogListRobots?.index && currentPage === 1,
         follow: blogListRobots?.follow,
@@ -26,6 +26,7 @@ const metadata = {
     openGraph: {
         type: "blog",
     },
+  ignoreTitleTemplate: true,
 };
 ---
 

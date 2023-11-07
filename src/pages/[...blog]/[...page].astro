@@ -18,7 +18,7 @@ const currentPage = page.currentPage ?? 1;
 // const allCategories = await findCategories();
 // const allTags = await findTags();
 const metadata = {
-    title: `Novedades ${currentPage > 1 ? ` — Page ${currentPage}` : ""}`,
+    title: `News ${currentPage > 1 ? ` - Page ${currentPage}` : ""}`,
     robots: {
         index: blogListRobots?.index && currentPage === 1,
         follow: blogListRobots?.follow,
@@ -26,15 +26,16 @@ const metadata = {
     openGraph: {
         type: "blog",
     },
+  ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
   <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
     <Headline
-      subtitle="Explora en nuestra colección de artículos, guías y eventos que realizaremos en diferentes ciudades en Bolivia."
+      subtitle="Explore our collection of articles, guides and events in different cities in Bolivia."
     >
-      Novedades
+      News
     </Headline>
     <BlogList posts={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />

@@ -8,7 +8,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'ETH Bolivia — Website de la comunidad.',
+  title: 'ETH Bolivia - Website de la comunidad.',
   ignoreTitleTemplate: true,
 };
 ---
@@ -20,13 +20,13 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Síguenos en',
+        text: 'Follow us',
         href: 'https://twitter.com/EthereumBo',
         target: '_blank',
         icon: 'tabler:brand-x',
       },
       { variant: 'secondary',
-        text: 'Comunidad en ',
+        text: 'Community group ',
         href: 'https://t.me/EthereumBo',
         target: '_blank',
         icon: 'tabler:brand-telegram', },
@@ -39,8 +39,8 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-         Comunidad de Ethereum en Bolivia.
-         Aprendamos, difundamos y construyamos!
+         Ethereum community in Bolivia.
+         Let's learn, spread and build!
       </span>
 
     </Fragment>
@@ -58,9 +58,9 @@ const metadata = {
     prices={[
       {
         title: 'Ethereum Bolivia 2023',
-        subtitle: 'La primera hackathon de Blockchain en el país',
+        subtitle: 'First Blockchain hackathon in the country',
         callToAction: {
-          text: 'Ver más',
+          text: 'See more',
           href: 'https://fabiola29298.github.io/ethBoliviaWebsite/hackathon-2023',
         },
         image: {
@@ -70,23 +70,23 @@ const metadata = {
       },
       {
         title: 'Ethereum Bolivia 2024',
-        subtitle: 'Sede: Santa Cruz',
+        subtitle: 'Location: Santa Cruz',
         callToAction: {
-          text: 'Ver más',
+          text: 'See more',
           href: 'https://fabiola29298.github.io/ethBoliviaWebsite/hackathon-2024',
         },
         hasRibbon: true,
-        ribbonTitle: 'Pronto',
+        ribbonTitle: 'Soon',
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/heroScz.png',
           alt: 'Image',
         },
       },
       {
-        title: '¿Quienes somos?',
-        subtitle: 'Conoce al equipo',
+        title: 'Who are we?',
+        subtitle: 'Meet the team',
         callToAction: {
-          text: 'Ver más',
+          text: 'See more',
           href: 'https://fabiola29298.github.io/ethBoliviaWebsite/nosotros',
         },
         image: {
@@ -114,11 +114,11 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Participa en nuestra comunidad</span>
+      Join our community
     </Fragment>
 
     <Fragment slot="subtitle">
-      Organizamos eventos cada mes.<br class="hidden md:inline" /> También Twitter Spaces :D
+     We organise events every month. <br class="hidden md:inline" /> Also Twitter Spaces
     </Fragment>
   </CallToAction>
 
@@ -126,8 +126,8 @@ const metadata = {
 
   <BlogLatestPosts
     id="blog"
-    title="Novedades"
-    information={`Explora en nuestra colección de artículos, guías y eventos que realizaremos en diferentes ciudades en Bolivia.`}
+    title="News"
+    information={`Explore our collection of articles, guides and events that we will be holding in different cities in Bolivia.`}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>

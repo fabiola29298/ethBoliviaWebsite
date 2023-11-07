@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Ethereum Bolivia
-    template: '%s — Ethereum Bolivia'
+    template: ' - Ethereum Bolivia'
   description: "\U0001F680 Ethereum Bolivia es un grupo de jóvenes entusiastas de la Web3 y de la tecnología Blockchain. Buscamos fomentar la investigación e innovación mediante diversas actividades para la comunidad."
   robots:
     index: true

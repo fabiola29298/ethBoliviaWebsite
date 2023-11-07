@@ -10,7 +10,8 @@ import BlogLatestPosts from "~/components/widgets/BlogLatestPosts.astro";
 changeLanguage("en");
 
 const metadata = {
-    title: "Quienes Somos",
+    title: "About us",
+  ignoreTitleTemplate: true,
 };
 ---
 
@@ -18,18 +19,18 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Quienes Somos"
+    tagline="About us"
     image={{
       src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/heroNosotros.png',
       alt: 'Comunidad Image',
     }}
   >
     <Fragment slot="title">
-      ¡Bienvenidos/as a Ethereum Bolivia!
+     Welcome to Ethereum Bolivia!
     </Fragment>
 
-    <Fragment slot="subtitle">
-      Somos una vibrante comunidad de apasionadas y curiosas mentes, entusiastas del ecosistema blockchain en Bolivia y toda Latinoamérica.
+   <Fragment slot="subtitle">
+      We are a vibrant community of passionate and curious minds, enthusiastic about the blockchain ecosystem in Bolivia and all of Latin America.
     </Fragment>
   </Hero>
 
@@ -37,21 +38,21 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Sedes"
+    title="Venues"
     subtitle=" "
     columns={2}
     isBeforeContent={true}
     items={[
-      {
+     {
         title: 'La Paz',
         description:
-          'Comenzamos la comunidad en La Paz en 2021, organizamos eventos mensuales.',
+          'We start community in La Paz in 2021, we organize monthly events.',
         icon: 'tabler:gps',
       },
       {
         title: 'Santa Cruz',
         description:
-          'Nuestro primer evento en Santa Cruz fue en 2022 y ahora estamos preparando la Hackathon para 2024.',
+          'Our first event in Santa Cruz was in 2022 and now we are preparing the Hackathon for 2024.',
         icon: 'tabler:gps',
       },
     ]}
@@ -61,32 +62,32 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="¿Quienes Somos?"
+    title="About us"
     subtitle=" "
     items={[
-      {
-        title: 'Misión',
+     {
+        title: 'Mission',
         description:
-          'Inspirar y convocar a todos los bolivianos, bolivianas y latinoamericanos a sumarse al movimiento web3 y construir un mejor futuro de la mano de Ethereum.',
+          'To inspire and invite all Bolivians and Latin Americans to join the web3 movement and build a better future with Ethereum',
       },
       {
-        title: 'Nuestro Espacio',
+        title: 'Our Space',
         description:
-          'Queremos que nuestro espacio sea un punto de encuentro donde se comparten ideas, se fomenta el aprendizaje continuo y se creen relaciones fructíferas y duraderas.',
+          'We want our space to be a meeting point where ideas are shared, continuous learning is encouraged and fruitful and lasting relationships are created.',
       },
       {
-        title: 'Quienes somos',
+        title: 'About us',
         description:
-          'Ethereum Bolivia es un grupo de jóvenes entusiastas de la Web3 y de la tecnología Blockchain. Buscamos fomentar la investigación e innovación mediante diversas actividades para la comunidad.',
+          'Ethereum Bolivia is a group of young enthusiasts of Web3 and Blockchain technology. We seek to promote research and innovation through various activities for the community.',
       },
     ]}
   />
 
   <!-- Steps2 Widget ****************** -->
 
-  <Steps2
-    title="Nuestro Impacto"
-    subtitle="Además revisa los logros de la primera Hackathon Web3 en el país. "
+<Steps2
+    title="Our Impact"
+    subtitle="Also check out the achievements of the first Web3 Hackathon in the country. "
     isReversed={true}
     callToAction={{
       text: 'Ethereum Bolivia 2023',
@@ -94,20 +95,20 @@ const metadata = {
     }}
     items={[
       {
-        title: 'Miembros de ETH Kipu - ETH Latam',
-        description: 'Somos parte de la red de comunidades latinas de Ethereum.',
+        title: 'ETH Kipu Members - ETH Latam',
+        description: 'We are part of the Ethereum Latam community network',
         icon: 'tabler:globe',
       },
       {
-        title: 'Generación de Comunidad',
+        title: 'Community Generation',
         description:
-          'Nos esforzamos por ser una comunidad orientada en crear la próxima generación.',
+          'We strive to be a community oriented in creating the next generation.',
         icon: 'tabler:message-star',
       },
       {
-        title: 'Educación sobre Web3 y Blockchain',
+        title: 'Web3 and Blockchain education',
         description:
-          'buscamos fomentar la educación, la colaboración, el intercambio de conocimiento y el desarrollo, ya sea que estés dando tus primeros pasos.',
+          'we seek to foster education, collaboration, knowledge sharing and development, whether you are just taking your first steps.',
         icon: 'tabler:award',
       },
     ]}
@@ -117,7 +118,7 @@ const metadata = {
   <!-- Agenda Widget ************** -->
 
   <Agenda
-    title="Equipo"
+    title="Team"
     subtitle=""
     tagline=" "
     items={[
@@ -125,7 +126,7 @@ const metadata = {
         title: 'Nico Gallardo',
         description: `Co-Founder / Finanzas Lead <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me!  </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers12.png',
@@ -136,7 +137,7 @@ const metadata = {
         title: 'Fabi Acarapi',
         description: `Co-Founder / Community Lead<br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers15.png',
@@ -147,7 +148,7 @@ const metadata = {
         title: 'Pedro Rey',
         description: `Co-Founder  <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers28.png',
@@ -158,7 +159,7 @@ const metadata = {
         title: 'Cecilia Contreras',
         description: `Content Manager <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers1.png',
@@ -169,7 +170,7 @@ const metadata = {
         title: 'Huascar Miranda',
         description: `Technical Mentor <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers14.png',
@@ -180,7 +181,7 @@ const metadata = {
         title: 'Alison Berbetty',
         description: `Legal Mentor <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers12.png',
@@ -191,7 +192,7 @@ const metadata = {
         title: 'Ayrton Paredes',
         description: `Technical Mentor <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers19.png',
@@ -202,7 +203,7 @@ const metadata = {
         title: 'Freddy Chambi',
         description: `Technical Mentor <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers21.png',
@@ -213,7 +214,7 @@ const metadata = {
         title: 'Fabian',
         description: `Legal Mentor <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers12.png',
@@ -224,7 +225,7 @@ const metadata = {
         title: 'Abidan',
         description: `Technical Mentor <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers12.png',
@@ -235,7 +236,7 @@ const metadata = {
         title: 'Manuel Elias ',
         description: `Technical Mentor <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers12.png',
@@ -246,7 +247,7 @@ const metadata = {
         title: 'Alexandro',
         description: `Technical Mentor <br>
         <a href="https://twitter.com/EthereumBo" class="text-muted hover:underline dark:text-slate-400 font-medium"
-        >Follow me! »</a>
+        >Follow me! </a>
         `,
         image: {
           src: 'https://raw.githubusercontent.com/fabiola29298/ethBoliviaWebsite/main/src/assets/images/agendaSpeakers12.png',
@@ -262,19 +263,18 @@ const metadata = {
 
 
   <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Contáctanos"
-    subtitle="¿Tienes alguna duda?, Estamos acá para ayudarte."
+<Steps2
+    title="Contact us"
+    subtitle="Do you have any questions, we're here to help."
 
     items={[
       {
-        title: 'Correo electrónico',
+        title: 'Email',
         description: 'ethbolivia@gmail.com',
         icon: 'tabler:mail',
       },
       {
-        title: 'Síguenos',
+        title: 'Follow us',
         description: '@EthereumBo',
         icon: 'tabler:brand-x',
       },
@@ -282,11 +282,10 @@ const metadata = {
   />
 
   <!-- BlogLatestPost Widget **************** -->
-
-  <BlogLatestPosts
+<BlogLatestPosts
     id="blog"
-    title="Novedades"
-    information={`Explora en nuestra colección de artículos, guías y eventos que realizaremos en diferentes ciudades en Bolivia.`}
+    title="News "
+    information={` Explore our collection of articles, guides and events we will be holding in different cities in Bolivia.`}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
