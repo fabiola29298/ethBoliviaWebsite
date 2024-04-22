@@ -13,13 +13,16 @@ import { readingTimeRemarkPlugin } from './src/utils/frontmatter.mjs';
 import { ANALYTICS, SITE } from './src/utils/config.ts';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown ? Array.isArray(items) ? items.map(item => item()) : [items()] : [];
+import vercel from '@astrojs/vercel/serverless';
+
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://fabiola29298.github.io/',
   base: '/ethBoliviaWebsite',
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
-  output: 'static',
+  output: 'server',
+  adapter: vercel(),
   integrations: [tailwind({
     applyBaseStyles: false
   }), sitemap(), mdx(), astroI18next(), icon({
