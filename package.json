@@ -21,12 +21,14 @@
     "@astrolib/analytics": "^0.5.0",
     "@astrolib/seo": "^1.0.0-beta.4",
     "@fontsource-variable/inter": "^5.0.8",
+    "@img/sharp-linux-x64": "^0.33.3",
     "@playform/compress": "^0.0.3",
     "astro": "^4.6.3",
     "astro-i18next": "1.0.0-beta.21",
     "astro-icon": "^1.0.0-next.2",
     "limax": "4.1.0",
     "lodash.merge": "^4.6.2",
+    "sharp": "^0.33.3",
     "unpic": "^3.10.0"
   },
   "devDependencies": {
@@ -38,7 +40,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "@types/lodash.merge": "^4.6.7",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
-    "@typescript-eslint/parser": "^6.7.2", 
+    "@typescript-eslint/parser": "^6.7.2",
     "eslint": "^8.49.0",
     "eslint-plugin-astro": "^0.29.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -54,7 +56,6 @@
   "engines": {
     "node": ">=18.14.1"
   },
-  
   "overrides": {
     "react": "npm:@preact/compat@latest",
     "react-dom": "npm:@preact/compat@latest",
