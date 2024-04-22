@@ -21,6 +21,7 @@
     "@astrolib/analytics": "^0.5.0",
     "@astrolib/seo": "^1.0.0-beta.4",
     "@fontsource-variable/inter": "^5.0.8",
+    "@playform/compress": "^0.0.3",
     "astro": "^4.6.3",
     "astro-i18next": "1.0.0-beta.21",
     "astro-icon": "^1.0.0-next.2",
@@ -53,5 +54,9 @@
   },
   "engines": {
     "node": ">=18.14.1"
+  },
+  "resolutions": {
+    "astro/sharp": "0.33.1",
+    "astro-compress/sharp": "0.33.1"
   }
 }

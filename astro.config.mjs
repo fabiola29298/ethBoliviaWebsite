@@ -15,6 +15,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const whenExternalScripts = (items = []) => ANALYTICS.vendors.googleAnalytics.id && ANALYTICS.vendors.googleAnalytics.partytown ? Array.isArray(items) ? items.map(item => item()) : [items()] : [];
 import vercel from '@astrojs/vercel/serverless';
 
+import playformCompress from "@playform/compress";
 
 // https://astro.build/config
 export default defineConfig({
@@ -43,7 +44,7 @@ export default defineConfig({
     JavaScript: true,
     SVG: true,
     Logger: 1
-  })],
+  }), playformCompress()],
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin]
   },
@@ -53,5 +54,5 @@ export default defineConfig({
         '~': path.resolve(__dirname, './src')
       }
     }
-  },
+  }
 });

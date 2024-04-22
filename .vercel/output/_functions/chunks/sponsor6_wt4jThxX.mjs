@@ -1,0 +1,14 @@
+const sponsor6 = new Proxy({"src":"/ethBoliviaWebsite/_astro/sponsor6.EHZyZp-D.png","width":1280,"height":640,"format":"png"}, {
+						get(target, name, receiver) {
+							if (name === 'clone') {
+								return structuredClone(target);
+							}
+							if (name === 'fsPath') {
+								return "/home/fabi/april2024/ethBoliviaWebsite/src/assets/images/sponsor6.png";
+							}
+							
+							return target[name];
+						}
+					});
+
+export { sponsor6 as default };
