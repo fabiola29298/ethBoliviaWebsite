@@ -53,5 +53,16 @@
   },
   "engines": {
     "node": ">=18.14.1"
+  },
+  
+  "overrides": {
+    "react": "npm:@preact/compat@latest",
+    "react-dom": "npm:@preact/compat@latest",
+    "astro": {
+      "sharp": "0.32.6"
+    },
+    "astro-compress": {
+      "sharp": "0.32.6"
+    }
   }
 }
